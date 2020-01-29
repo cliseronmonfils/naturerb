@@ -9,24 +9,31 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
+    private Button button;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button button = findViewById(R.id.button);
+        button = findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openDialog();
+                openActivity2();
             }
         });
     }
-    public void openDialog() {
-        Dialog dialog = new Dialog();
-        dialog.show(getSupportFragmentManager(), "dialog");
-
+    public void openActivity2() {
+        Intent intent = new Intent(MainActivity.this, Accueil.class);
+        startActivity(intent);
 
     }
-}
+    /*public void openDialog() {
+        Dialog dialog = new Dialog();
+        dialog.show(getSupportFragmentManager(), "dialog");
+    */
+
+    }
+
