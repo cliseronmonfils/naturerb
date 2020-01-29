@@ -17,7 +17,7 @@ public class Accueil extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.accueil);
-/*
+
         PageBouge = findViewById(R.id.logo_acceuil);
         PageTete = findViewById(R.id.tete);
 
@@ -38,10 +38,8 @@ public class Accueil extends AppCompatActivity {
     }
       private void moveToPage(){
 
-        Intent intent = new Intent (Accueil.this, Accueil.class);
+        Intent intent = new Intent (Accueil.this, Symptomes.class);
         startActivity(intent);
       }
-*/
 
-    }
 }
