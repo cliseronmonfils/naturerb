@@ -18,9 +18,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" ></activity>
         <activity android:name=".Accueil"></activity>
         <activity android:name=".Recette"></activity>
+        <activity android:name=".Symptomes"></activity>
     </application>
 
 </manifest>
