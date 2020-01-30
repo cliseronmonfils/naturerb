@@ -29,7 +29,7 @@ public class SplashScreenActivity extends AppCompatActivity {
         };
 
         //Handler post delayed
-        new Handler().postDelayed(runnable, 3000);
+        new Handler().postDelayed(runnable, 2000);
     }
 }
 
