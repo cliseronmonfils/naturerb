@@ -8,6 +8,22 @@
     tools:context=".MainActivity">
 
     <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="182dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginBottom="31dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/corps" />
+
+    <ImageView
         android:id="@+id/logo-nerb"
         android:layout_width="68dp"
         android:layout_height="54dp"
@@ -17,22 +33,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logonerb" />
-
-    <ImageView
-        android:id="@+id/corps"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginLeft="56dp"
-        android:layout_marginTop="178dp"
-        android:layout_marginEnd="56dp"
-        android:layout_marginRight="56dp"
-        android:layout_marginBottom="34dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/corps_acc" />
 
     <ImageButton
         android:id="@+id/logo_acceuil"
@@ -78,7 +78,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/tete"
+        android:id="@+id/btntete"
         android:layout_width="52dp"
         android:layout_height="47dp"
         android:layout_marginStart="202dp"
@@ -94,7 +94,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/ventre"
+        android:id="@+id/btnventre"
         android:layout_width="49dp"
         android:layout_height="49dp"
         android:layout_marginStart="208dp"
@@ -110,7 +110,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/brasD"
+        android:id="@+id/btnbrasD"
         android:layout_width="49dp"
         android:layout_height="46dp"
         android:layout_marginStart="146dp"
@@ -126,7 +126,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/brasG"
+        android:id="@+id/btnbrasG"
         android:layout_width="52dp"
         android:layout_height="46dp"
         android:layout_marginStart="271dp"
@@ -142,7 +142,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/jambeD"
+        android:id="@+id/btnjambeD"
         android:layout_width="58dp"
         android:layout_height="54dp"
         android:layout_marginStart="169dp"
@@ -158,7 +158,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/jambeG"
+        android:id="@+id/btnjambeG"
         android:layout_width="53dp"
         android:layout_height="53dp"
         android:layout_marginStart="240dp"

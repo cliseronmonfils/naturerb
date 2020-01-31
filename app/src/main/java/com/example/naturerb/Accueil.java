@@ -10,36 +10,82 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Accueil extends AppCompatActivity {
 
-    private ImageButton PageBouge;
-    private Button PageTete;
+    private ImageButton PageAcceuil;
+    private ImageButton Menu;
+    private Button PageSTete;
+    private Button PageSBrasG;
+    private Button PageSBrasD;
+    private Button PageSJambesG;
+    private Button PageSJambesD;
+    private Button PageSVentre;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.accueil);
 
-        PageBouge = findViewById(R.id.logo_acceuil);
-        PageTete = findViewById(R.id.tete);
+        PageAcceuil = findViewById(R.id.logo_acceuil);
+        PageSTete = findViewById(R.id.btntete);
+        PageSBrasD = findViewById(R.id.btnbrasD);
+        PageSBrasG = findViewById(R.id.btnbrasG);
+        PageSJambesD = findViewById(R.id.btnjambeD);
+        PageSJambesG = findViewById(R.id.btnjambeG);
+        PageSVentre = findViewById(R.id.btnventre);
 
-        PageBouge.setOnClickListener(new View.OnClickListener() {
+        PageAcceuil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                moveToPage();
+                moveToPage(Accueil.class);
             }
         });
-        PageTete.setOnClickListener(new View.OnClickListener() {
+        PageSTete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                moveToPage();
+                moveToPage(SymptomesTete.class);
+            }
+        });
+        PageSBrasD.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                moveToPage(SymptomesBras.class);
+            }
+        });
+        PageSBrasG.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                moveToPage(SymptomesBras.class);
+            }
+        });
+        PageSJambesD.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                moveToPage(SymptomesJambes.class);
+            }
+        });
+        PageSJambesG.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                moveToPage(SymptomesJambes.class);
+            }
+        });
+        PageSVentre.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                moveToPage(SymptomesVentre.class);
             }
         });
     }
-      private void moveToPage(){
 
-        Intent intent = new Intent (Accueil.this, Symptomes.class);
+    private void moveToPage(Class obj){
+        Intent intent = new Intent (Accueil.this, obj);
         startActivity(intent);
-      }
+    }
 
 }

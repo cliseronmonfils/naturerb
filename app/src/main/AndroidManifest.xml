@@ -21,7 +21,10 @@
         <activity android:name=".MainActivity" ></activity>
         <activity android:name=".Accueil"></activity>
         <activity android:name=".Recette"></activity>
-        <activity android:name=".Symptomes"></activity>
+        <activity android:name=".SymptomesTete"></activity>
+        <activity android:name=".SymptomesBras"></activity>
+        <activity android:name=".SymptomesVentre"></activity>
+        <activity android:name=".SymptomesJambes"></activity>
     </application>
 
 </manifest>
