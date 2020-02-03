@@ -36,7 +36,7 @@ public class Accueil extends AppCompatActivity {
         PageSTete = findViewById(R.id.btntete);
         PageSBrasD = findViewById(R.id.btnbrasD);
         PageSBrasG = findViewById(R.id.btnbrasG);
-        PageSJambesD = findViewById(R.id.btnjambeD);
+
         PageSJambesG = findViewById(R.id.btnjambeG);
         PageSVentre = findViewById(R.id.btnventre);
 
@@ -61,13 +61,7 @@ public class Accueil extends AppCompatActivity {
                 moveToPage(SymptomesBras.class);
             }
         });
-        PageSJambesD.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-                moveToPage(SymptomesJambes.class);
-            }
-        });
         PageSJambesG.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
