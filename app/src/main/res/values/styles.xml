@@ -12,4 +12,17 @@
         <item name="colorAccent">@color/colorProgressbar</item>
     </style>
 
+    <!-- Menu theme -->
+    <style name="CustomToolbarStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <!-- menu item Theme -->
+    <style name="CustomPopUpStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:background">@color/white</item>
+        <item name="overlapAnchor">false</item>
+        <item name="android:dropDownVerticalOffset">-4dp</item>
+    </style>
+
 </resources>

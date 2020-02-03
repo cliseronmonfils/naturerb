@@ -2,11 +2,16 @@ package com.example.naturerb;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 public class Accueil extends AppCompatActivity {
 
@@ -23,8 +28,11 @@ public class Accueil extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.accueil);
+        //menu
+        Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar);
+        setSupportActionBar(toolbar);
+        //fin menu
 
-        PageAcceuil = findViewById(R.id.logo_acceuil);
         PageSTete = findViewById(R.id.btntete);
         PageSBrasD = findViewById(R.id.btnbrasD);
         PageSBrasG = findViewById(R.id.btnbrasG);
@@ -32,13 +40,6 @@ public class Accueil extends AppCompatActivity {
         PageSJambesG = findViewById(R.id.btnjambeG);
         PageSVentre = findViewById(R.id.btnventre);
 
-        PageAcceuil.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                moveToPage(Accueil.class);
-            }
-        });
         PageSTete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -88,4 +89,26 @@ public class Accueil extends AppCompatActivity {
         startActivity(intent);
     }
 
+    //menu bar
+    @Override
+    public boolean onCreateOptionsMenu(android.view.Menu menu) {
+        MenuInflater infalter = getMenuInflater();
+        infalter.inflate(R.menu.menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+    //menu bar items
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            // action with ID action_accueil was selected
+            case R.id.action_accueil:
+
+                break;
+
+            default:
+                break;
+        }
+        return super.onOptionsItemSelected(item);
+
+    }
 }

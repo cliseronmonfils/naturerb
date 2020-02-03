@@ -53,10 +53,13 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
 */
     }
+
+
     /*public void openDialog() {
         Dialog dialog = new Dialog();
         dialog.show(getSupportFragmentManager(), "dialog");
     */
 
     }
+
 
