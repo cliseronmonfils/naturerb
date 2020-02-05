@@ -50,6 +50,7 @@
                 android:layout_marginTop="24dp"
                 android:gravity="center_horizontal"
                 android:text="Jambes"
+                android:textColor="#4472C4"
                 android:textSize="18sp"
                 app:layout_constraintTop_toBottomOf="@+id/divider" />
 
@@ -77,18 +78,18 @@
                     android:layout_marginRight="10dip"
                     android:background="@drawable/rounded_corners"
                     android:gravity="center"
-                    android:text="Button"
+                    android:text="Coup Soleil"
                     android:textColor="@android:color/white" />
 
                 <Button
-                    android:id="@+id/button3"
+                    android:id="@+id/button2"
                     android:layout_width="100dp"
                     android:layout_height="90dp"
                     android:layout_gravity="top|end"
                     android:layout_marginRight="10dip"
                     android:background="@drawable/rounded_corners"
                     android:gravity="center"
-                    android:text="Button"
+                    android:text="Cellulite"
                     android:textColor="@android:color/white" />
 
             </LinearLayout>
@@ -101,7 +102,7 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/button5"
+                    android:id="@+id/button3"
                     android:layout_width="100dp"
                     android:layout_height="90dp"
                     android:layout_gravity="top|center"
@@ -109,19 +110,20 @@
                     android:layout_marginRight="10dip"
                     android:background="@drawable/rounded_corners"
                     android:gravity="center"
-                    android:text="Button"
+                    android:text="Herpes"
                     android:textColor="@android:color/white" />
 
                 <Button
-                    android:id="@+id/button6"
+                    android:id="@+id/button4"
                     android:layout_width="100dp"
                     android:layout_height="90dp"
                     android:layout_gravity="top|end"
                     android:layout_marginRight="10dip"
                     android:background="@drawable/rounded_corners"
                     android:gravity="center"
-                    android:text="Button"
-                    android:textColor="@android:color/white" />
+                    android:text="Piqure Moustique"
+                    android:textColor="@android:color/white"
+                    android:textSize="10sp" />
             </LinearLayout>
 
             <LinearLayout
