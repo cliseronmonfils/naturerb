@@ -1,12 +1,28 @@
 <resources>
     <string name="app_name">Naturerb</string>
-    <string name="cgu">1.1 Les présentes Conditions Générales d’Utilisation (ci-après les “CGU”) ont vocation à régir l’utilisation de l’application NaturErb proposée par la société GROUPE4. NaturErb comporte, entre autres et selon l’application utilisée les fonctions suivantes : Accès au Menu de l’application :Présentation Home : Accès direct au parti du corps qui présentent des symptômes, selon les symptômes des solutions naturelles seront proposées.CGU Confidentialité Qui Sommes-nous ? "\n"
+    <string name="cgu"><bold>  1. Présentation </bold> "\n"
+
+Les présentes Conditions Générales d’Utilisation (ci-après les “CGU”) ont vocation à régir l’utilisation de l’application NaturErb proposée par la société 302INDUSTRIES. "\n"
+
+NaturErb comporte les fonctions suivantes : "\n"
+- Présentation "\n"
+- Accueil "\n"
+- Contact "\n"
+- CGU "\n"
+- Mentions légales "\n""\n"
+
 2. Contenu "\n"
-2.1 L’ensemble du contenu de l’Application a été conçu et réalisé sur l’initiative de GROUPE 4 et rédigé par l’équipe du projet. Chaque information de l’application sera accompagnée de la source de cette information. Toutes les sources ont été vérifiées au préalable. Ces dernières au même titre que GROUPE 4 ne pourront en aucun cas être tenu responsables, sans que cette liste ne soit limitative, des dommages, dépenses de toute nature incluant une erreur de lecture, de diagnostic pouvant être à l’origine d’infirmités séquelle ou encore décès. "\n"
-L’utilisateur doit avoir conscience et admettre que le contenu est à caractère informatif et ne présumant pas de l’état de santé futur ou à venir de l’utilisateur. De plus GROUPE 4 ne garantit pas l’exactitude, la complétude, l’exhaustivité et la pertinence des informations fournies.
+
+L’ensemble du contenu de l’Application a été conçu et réalisé sur l’initiative de 302INDUSTRIES et rédigé par l’équipe du projet. Chaque information de l’application sera accompagnée de la source de cette information. Toutes les sources ont été vérifiées au préalable. Ces dernières au même titre que 302INDUSTRIES ne pourront en aucun cas être tenu responsables, sans que cette liste ne soit limitative, des dommages, dépenses de toute nature incluant une erreur de lecture, de diagnostic pouvant être à l’origine d’infirmités séquelle ou encore décès. "\n"
+
+L’utilisateur doit avoir conscience et admettre que le contenu est à caractère informatif et ne présumant pas de l’état de santé futur ou à venir de l’utilisateur. De plus 302INDUSTRIES ne garantit pas l’exactitude, la complétude, l’exhaustivité et la pertinence des informations fournies. "\n" "\n"
+
 3. Avertissement "\n"
-Cette application est uniquement informative et propose des solutions. Les remèdes ne remplacent en aucun cas les médicaments prescrit par un médecin. Les recettes peuvent contenir des allergènes.  NaturErb n’est pas un dispositif médical tel que définit. "\n"
+
+Cette application est uniquement informative et propose des solutions. Les remèdes ne remplacent en aucun cas les médicaments prescrit par un médecin. Les recettes peuvent contenir des allergènes.  NaturErb n’est pas un dispositif médical tel que défini. "\n" "\n"
+
 4. Données personnelles "\n"
-Les informations et données personnelles communiquées par l’utilisateur font l’objet d’un traitement informatique et sont conservés par GROUPE 4 et ne seront en aucun cas communiqué.  </string>
+
+Les informations et données personnelles communiquées par l’utilisateur font l’objet d’un traitement informatique et sont conservés par 302INDUSTRIES et ne seront en aucun cas communiqué. De plus 302INDUSTRIES n’enregistre aucune donnée personnelle.   </string>
 
 </resources>
