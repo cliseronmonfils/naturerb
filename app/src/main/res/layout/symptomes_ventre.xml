@@ -68,7 +68,7 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/button2"
+                    android:id="@+id/buttonB"
                     android:layout_width="100dp"
                     android:layout_height="90dp"
                     android:layout_gravity="start"
@@ -80,7 +80,7 @@
                     android:textSize="11sp" />
 
                 <Button
-                    android:id="@+id/button2"
+                    android:id="@+id/buttonH"
                     android:layout_width="100dp"
                     android:layout_height="90dp"
                     android:layout_gravity="top|center"

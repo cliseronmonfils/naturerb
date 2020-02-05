@@ -21,4 +21,8 @@
         android:title="Equipe"
         app:showAsAction="never"></item>
 
+    <item android:id="@+id/action_mentions"
+        android:title="Mentions légales"
+        app:showAsAction="never"></item>
+
 </menu>

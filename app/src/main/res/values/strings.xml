@@ -23,6 +23,16 @@ Cette application est uniquement informative et propose des solutions. Les remè
 
 4. Données personnelles "\n"
 
-Les informations et données personnelles communiquées par l’utilisateur font l’objet d’un traitement informatique et sont conservés par 302INDUSTRIES et ne seront en aucun cas communiqué. De plus 302INDUSTRIES n’enregistre aucune donnée personnelle.   </string>
+Les informations et données personnelles communiquées par l’utilisateur font l’objet d’un traitement informatique et sont conservés par 302INDUSTRIES et ne seront en aucun cas communiqué. De plus 302INDUSTRIES n’enregistre aucune donnée personnelle.
+    </string>
 
+    <string name="equipe">
+    Bonjour ! Nous vous présentons notre équipe qui est constituée de 3 développeurs : Carol-Anne, Cathelyne et Jeremy qui se sont chargés du développement de l’application ainsi que du design ! De 2 administrateurs réseaux : Rayane et Alexandre qui nous ont été d’une grande aide pour l’administration de la base de données. Et enfin, notre chef de projet Silvia qui nous a dirigé tout au long de ce projet.
+
+    Merci l’équipe ! :)
+    </string>
+
+    <string name="presentation">
+        Dans le contexte de la réalisation d’un projet sur le thème du “Bien commun”, l’équipe de  NaturErb a réalisé une application proposant un large panel de solutions naturelles en fonction des parties du corps et des symptômes liés à celles-ci.
+    </string>
 </resources>
