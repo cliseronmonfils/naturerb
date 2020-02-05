@@ -100,7 +100,8 @@
                     android:gravity="center"
                     android:text="Ecoulement Nasal"
                     android:textColor="@android:color/white"
-                    android:textSize="10sp" />
+                    android:textSize="10dp"
+                     />
 
             </LinearLayout>
 
