@@ -5,44 +5,25 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
+import android.widget.ImageButton;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-public class SymptomesTete extends AppCompatActivity {
+public class RecetteChuteCheveux extends AppCompatActivity {
 
-    private Button PageChuteCheveux;
+    private ImageButton PageAccueil;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.symptomes_tete);
+        setContentView(R.layout.recettechutecheveux);
+        //menu
         Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar);
         setSupportActionBar(toolbar);
-
-        PageChuteCheveux = findViewById(R.id.button4);
-
-        PageChuteCheveux.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-
-                moveToPage(RecetteChuteCheveux.class);
-            }
-        });
     }
 
-
-
-
-
-    private void moveToPage(Class obj){
-        Intent intent = new Intent (SymptomesTete.this, obj);
-        startActivity(intent);
-    }
     //menu bar
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -63,5 +44,10 @@ public class SymptomesTete extends AppCompatActivity {
                 break;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    private void moveToPage(Class obj){
+        Intent intent = new Intent (RecetteChuteCheveux.this, obj);
+        startActivity(intent);
     }
 }

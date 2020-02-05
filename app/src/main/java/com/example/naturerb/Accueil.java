@@ -36,7 +36,6 @@ public class Accueil extends AppCompatActivity {
         PageSTete = findViewById(R.id.btntete);
         PageSBrasD = findViewById(R.id.btnbrasD);
         PageSBrasG = findViewById(R.id.btnbrasG);
-
         PageSJambesG = findViewById(R.id.btnjambeG);
         PageSVentre = findViewById(R.id.btnventre);
 
