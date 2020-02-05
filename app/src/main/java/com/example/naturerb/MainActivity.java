@@ -23,10 +23,15 @@ public class MainActivity extends AppCompatActivity {
         final AlertDialog dialog = new AlertDialog.Builder(this)
                 .setTitle("CGU")
                 .setMessage(this.getResources().getString(R.string.cgu))
-                .setPositiveButton("Valider", null)
-                .show()
-                ;
-
+                .setPositiveButton("J'accepte", null)
+                .setNegativeButton("Je refuse",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int whichButton) {
+                                finish();
+                            }
+                        }
+                )
+                .show();
         Button positiveButton = dialog.getButton(AlertDialog.BUTTON_POSITIVE);
         positiveButton.setTextColor(Color.parseColor("#FF0B8B42"));
         positiveButton.setOnClickListener(new View.OnClickListener() {
@@ -40,28 +45,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, Accueil.class);
         startActivity(intent);
 
-
-
-       /* button = findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openActivity2();
-            }
-        });
     }
-    public void openActivity2() {
-        Intent intent = new Intent(MainActivity.this, Accueil.class);
-        startActivity(intent);
-*/
-    }
-
-
-    /*public void openDialog() {
-        Dialog dialog = new Dialog();
-        dialog.show(getSupportFragmentManager(), "dialog");
-    */
-
-    }
+}
 
 
