@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecetteBallonement">
+
+    // menu
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar"></include>
+
+
+    <TextView
+        android:id="@+id/libelle"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginTop="56dp"
+        android:background="#4472C4"
+        android:gravity="center"
+        android:text="Maux de tête"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#FFFFFF"
+        android:textSize="19sp"
+        app:fontFamily="sans-serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="@id/app_bar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/libelle">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nomRecette"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="0dp"
+                android:text="Ingrédients:\nHuile essentielle de menthe poivrée"
+                android:textColor="@color/bleu"
+                android:textSize="18sp"
+                app:fontFamily="sans-serif" />
+
+            <TextView
+                android:id="@+id/recette"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="35dp"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="Appliqué sur la peau, le menthol de cette huile essentielle (HE) procure un effet rafraîchissant et antalgique efficace sur un mal de tête. Un léger massage avec 2 g d’HE de menthe poivrée diluée dans 125 mg d’huile de noisette sur le front, les tempes et le lobe des oreilles toutes les cinq minutes peuvent calmer la douleur. L’HE de menthe poivrée peut également être associée à l’huile essentielle de basilic qui a une forte action antispasmodique. "
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/linearLayout" />
+            <TextView
+                android:id="@+id/source"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="40dp"
+                android:text="Source : https://www.santemagazine.fr/sante/maladies/maladies-neurologiques/mal-de-tete/quatre-solutions-naturelles-pour-calmer-les-maux-de-tete-171930"
+                android:textColor="@color/bleu"
+                android:textSize="10sp"
+                app:fontFamily="sans-serif" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

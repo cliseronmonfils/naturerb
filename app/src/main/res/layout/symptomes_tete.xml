@@ -75,7 +75,7 @@
                     android:layout_marginLeft="10dip"
                     android:background="@drawable/rounded_corners"
                     android:gravity="center"
-                    android:text="Maux de   tete"
+                    android:text="Maux de\ntete"
                     android:textColor="@android:color/white" />
 
                 <Button
@@ -98,13 +98,9 @@
                     android:layout_marginRight="10dip"
                     android:background="@drawable/rounded_corners"
                     android:gravity="center"
-                    android:text="Ecoulement Nasal"
+                    android:text="Ecoulement\nNasal"
                     android:textColor="@android:color/white"
-
                     android:textSize="14sp" />
-
-                  
-
 
             </LinearLayout>
 
@@ -123,7 +119,7 @@
                     android:layout_marginLeft="10dip"
                     android:background="@drawable/rounded_corners"
                     android:gravity="center"
-                    android:text="Chute Cheveux"
+                    android:text="Chute\nCheveux"
                     android:textColor="@android:color/white" />
 
                 <Button
@@ -135,7 +131,7 @@
                     android:layout_marginRight="10dip"
                     android:background="@drawable/rounded_corners"
                     android:gravity="center"
-                    android:text="Toux    grasse"
+                    android:text="Toux\ngrasse"
                     android:textColor="@android:color/white" />
 
                 <Button
@@ -146,7 +142,7 @@
                     android:layout_marginRight="10dip"
                     android:background="@drawable/rounded_corners"
                     android:gravity="center"
-                    android:text="Toux      Seche"
+                    android:text="Toux\nSeche"
                     android:textColor="@android:color/white" />
             </LinearLayout>
 
@@ -165,7 +161,7 @@
                     android:layout_marginLeft="10dip"
                     android:background="@drawable/rounded_corners"
                     android:gravity="center"
-                    android:text="Piqure Moustique"
+                    android:text="Piqure\nMoustique"
                     android:textColor="@android:color/white" />
 
                 <Button

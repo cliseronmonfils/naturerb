@@ -24,6 +24,8 @@ public class SymptomesTete extends AppCompatActivity {
     private Button PageTouxSeche;
     private Button PagePiqure;
     private Button PageHerpes;
+    private Button PageMauxDeTete;
+
 
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
@@ -39,6 +41,7 @@ public class SymptomesTete extends AppCompatActivity {
         PageTouxSeche = findViewById(R.id.button6);
         PagePiqure = findViewById(R.id.button7);
         PageHerpes = findViewById(R.id.button8);
+        PageMauxDeTete = findViewById(R.id.button1);
 
 
         PageChuteCheveux.setOnClickListener(new View.OnClickListener() {
@@ -88,6 +91,13 @@ public class SymptomesTete extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 moveToPage(RecetteHerpes.class);
+            }
+        });
+        PageMauxDeTete.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                moveToPage(RecetteMauxTete.class);
             }
         });
 
