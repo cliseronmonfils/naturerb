@@ -8,7 +8,6 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
@@ -32,7 +31,7 @@ public class SymptomesVentre extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                moveToPage(Recette.class);
+                moveToPage(RecetteBallonement.class);
             }
         });
 
@@ -56,6 +55,9 @@ public class SymptomesVentre extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
 
+            case R.id.action_accueil:
+                moveToPage(Accueil.class);
+            break;
 
             case R.id.action_projet:
                 final AlertDialog dialogueprojet = new AlertDialog.Builder(this)

@@ -22,12 +22,18 @@
         </activity>
         <activity android:name=".MainActivity" ></activity>
         <activity android:name=".Accueil"></activity>
-        <activity android:name=".Recette"></activity>
-        <activity android:name=".RecetteChuteCheveux"></activity>
+        <activity android:name=".RecetteBallonement"></activity>
         <activity android:name=".SymptomesTete"></activity>
         <activity android:name=".SymptomesBras"></activity>
         <activity android:name=".SymptomesVentre"></activity>
         <activity android:name=".SymptomesJambes"></activity>
+        <activity android:name=".RecetteChuteCheveux"></activity>
+        <activity android:name=".RecetteOtite"></activity>
+        <activity android:name=".RecetteEcoulement"></activity>
+        <activity android:name=".RecetteTouxSeche"></activity>
+        <activity android:name=".RecetteTouxGrasse"></activity>
+        <activity android:name=".RecetteHerpes"></activity>
+        <activity android:name=".RecettePiqure"></activity>
     </application>
 
 </manifest>

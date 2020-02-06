@@ -75,7 +75,7 @@
                     android:layout_marginLeft="10dip"
                     android:background="@drawable/rounded_corners"
                     android:gravity="center"
-                    android:text="Maux de tete"
+                    android:text="Maux de   tete"
                     android:textColor="@android:color/white" />
 
                 <Button
@@ -94,13 +94,13 @@
                     android:id="@+id/button3"
                     android:layout_width="100dp"
                     android:layout_height="90dp"
-                    android:layout_gravity="top|end"
+                    android:layout_gravity="end"
                     android:layout_marginRight="10dip"
                     android:background="@drawable/rounded_corners"
                     android:gravity="center"
                     android:text="Ecoulement Nasal"
                     android:textColor="@android:color/white"
-                    android:textSize="10sp" />
+                    android:textSize="14sp" />
 
             </LinearLayout>
 
@@ -131,7 +131,7 @@
                     android:layout_marginRight="10dip"
                     android:background="@drawable/rounded_corners"
                     android:gravity="center"
-                    android:text="Toux grasse"
+                    android:text="Toux    grasse"
                     android:textColor="@android:color/white" />
 
                 <Button
@@ -142,7 +142,7 @@
                     android:layout_marginRight="10dip"
                     android:background="@drawable/rounded_corners"
                     android:gravity="center"
-                    android:text="Toux Seche"
+                    android:text="Toux      Seche"
                     android:textColor="@android:color/white" />
             </LinearLayout>
 

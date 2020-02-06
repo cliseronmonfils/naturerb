@@ -17,29 +17,80 @@ import androidx.appcompat.widget.Toolbar;
 public class SymptomesTete extends AppCompatActivity {
 
     private Button PageChuteCheveux;
+    private Button PageOtite;
+    private Button PageEcoulement;
+    private Button PageTouxGrasse;
+    private Button PageTouxSeche;
+    private Button PagePiqure;
+    private Button PageHerpes;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.symptomes_tete);
         Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar);
         setSupportActionBar(toolbar);
 
         PageChuteCheveux = findViewById(R.id.button4);
+        PageOtite = findViewById(R.id.button2);
+        PageEcoulement = findViewById(R.id.button3);
+        PageTouxGrasse = findViewById(R.id.button5);
+        PageTouxSeche = findViewById(R.id.button6);
+        PagePiqure = findViewById(R.id.button7);
+        PageHerpes = findViewById(R.id.button8);
+
 
         PageChuteCheveux.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-
                 moveToPage(RecetteChuteCheveux.class);
             }
         });
+        PageOtite.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                moveToPage(RecetteOtite.class);
+            }
+        });
+        PageEcoulement.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                moveToPage(RecetteEcoulement.class);
+            }
+        });
+        PageTouxGrasse.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                moveToPage(RecetteTouxGrasse.class);
+            }
+        });
+        PageTouxSeche.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                moveToPage(RecetteTouxSeche.class);
+            }
+        });
+        PagePiqure.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                moveToPage(RecettePiqure.class);
+            }
+        });
+        PageHerpes.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                moveToPage(RecetteHerpes.class);
+            }
+        });
+
     }
-
-
-
-
 
     private void moveToPage(Class obj){
         Intent intent = new Intent (SymptomesTete.this, obj);
@@ -57,6 +108,9 @@ public class SymptomesTete extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
 
+            case R.id.action_accueil:
+                moveToPage(Accueil.class);
+            break;
 
             case R.id.action_projet:
                 final AlertDialog dialogueprojet = new AlertDialog.Builder(this)

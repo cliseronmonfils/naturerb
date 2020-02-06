@@ -36,6 +36,9 @@ public class SymptomesBras extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
 
+            case R.id.action_accueil:
+                moveToPage(Accueil.class);
+            break;
 
             case R.id.action_projet:
                 final AlertDialog dialogueprojet = new AlertDialog.Builder(this)
@@ -73,5 +76,9 @@ public class SymptomesBras extends AppCompatActivity {
                 break;
         }
         return super.onOptionsItemSelected(item);
+    }
+    private void moveToPage(Class obj){
+        Intent intent = new Intent (SymptomesBras.this, obj);
+        startActivity(intent);
     }
 }
