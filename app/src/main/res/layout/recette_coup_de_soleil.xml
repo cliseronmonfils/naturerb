@@ -104,7 +104,7 @@
                 android:layout_marginTop="35dp"
                 android:gravity="start|top"
                 android:inputType="textMultiLine"
-                android:text="Coupez-le en fines rondelles et dispersez-les sur la zone inflammée. Patientez quelques minutes. La peau réhydratée par la fraîcheur du concombre, sera rapidement soulagée.\nNaturellement riche en eau, le concombre est un soin idéal contre le coup de soleil"
+                android:text="Coupez-le en fines rondelles et dispersez-les sur la zone inflammée. Patientez quelques minutes. La peau réhydratée par la fraîcheur du concombre, sera rapidement soulagée.\nNaturellement riche en eau, le concombre est un soin idéal contre le coup de soleil."
                 app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
