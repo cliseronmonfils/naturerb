@@ -19,6 +19,7 @@ public class SymptomesJambes extends AppCompatActivity {
     private Button PagePiqureMoustique;
     private Button PageHerpes;
     private Button PageCellulite;
+    private Button PageCoupDeSoleil;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,10 +27,18 @@ public class SymptomesJambes extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar);
         setSupportActionBar(toolbar);
 
-        PageCellulite= findViewById(R.id.button2);
+        PageCoupDeSoleil = findViewById(R.id.button1);
+        PageCellulite = findViewById(R.id.button2);
         PageHerpes = findViewById(R.id.button3);
         PagePiqureMoustique = findViewById(R.id.button4);
 
+        PageCoupDeSoleil.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                moveToPage(RecetteCoupDeSoleil.class);
+            }
+        });
 
         PageCellulite.setOnClickListener(new View.OnClickListener() {
 
@@ -38,6 +47,7 @@ public class SymptomesJambes extends AppCompatActivity {
                 moveToPage(RecetteCelullite.class);
             }
         });
+
         PageHerpes.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -45,6 +55,7 @@ public class SymptomesJambes extends AppCompatActivity {
                 moveToPage(RecetteHerpes.class);
             }
         });
+
         PagePiqureMoustique.setOnClickListener(new View.OnClickListener() {
 
             @Override
