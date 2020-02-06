@@ -86,8 +86,9 @@
                     android:layout_marginRight="10dip"
                     android:background="@drawable/rounded_corners"
                     android:gravity="center"
-                    android:text="Coup Soleil"
-                    android:textColor="@android:color/white" />
+                    android:text="Coup de Soleil"
+                    android:textColor="@android:color/white"
+                    android:textSize="10dp"/>
 
                 <Button
                     android:id="@+id/button2"

@@ -8,6 +8,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageButton;
 
@@ -96,11 +97,12 @@ public class Accueil extends AppCompatActivity {
 
             case R.id.action_projet:
                 final AlertDialog dialogueprojet = new AlertDialog.Builder(this, R.style.AlertDialog)
-                        .setTitle("Le projet NaturErb")
+                        .setTitle("NaturErb")
                         .setMessage(this.getResources().getString(R.string.presentation))
                         .setPositiveButton("Fermer", null)
                         .show()
                         ;
+
                 Button positiveButton = dialogueprojet.getButton(AlertDialog.BUTTON_POSITIVE);
                 positiveButton.setTextColor(Color.parseColor("#ffffff"));
                 dialogueprojet.getWindow().setBackgroundDrawable(new ColorDrawable(0xFF70AD47));
