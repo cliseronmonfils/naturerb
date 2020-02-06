@@ -20,7 +20,7 @@
         android:layout_marginTop="56dp"
         android:background="#4472C4"
         android:gravity="center"
-        android:text="Ecoulement nazal"
+        android:text="Ecoulement nasal"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="#FFFFFF"
         android:textSize="19sp"
