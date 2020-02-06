@@ -18,7 +18,9 @@ import androidx.appcompat.widget.Toolbar;
 public class SymptomesVentre extends AppCompatActivity {
 
     private Button PageBallo;
-
+    private Button PageHerpes;
+    private Button PageCoupDeSoleil;
+    private Button PagePiqure;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +29,9 @@ public class SymptomesVentre extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         PageBallo = findViewById(R.id.buttonB);
+        PageHerpes = findViewById(R.id.buttonH);
+        PageCoupDeSoleil = findViewById(R.id.buttonC);
+        PagePiqure = findViewById(R.id.buttonP);
 
         PageBallo.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,6 +41,29 @@ public class SymptomesVentre extends AppCompatActivity {
             }
         });
 
+        PageHerpes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                moveToPage(RecetteHerpes.class);
+            }
+        });
+
+        PageCoupDeSoleil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                moveToPage(RecetteCoupDeSoleil.class);
+            }
+        });
+
+        PagePiqure.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                moveToPage(RecettePiqure.class);
+            }
+        });
 
 
     }
