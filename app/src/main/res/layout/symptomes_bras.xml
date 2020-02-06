@@ -86,9 +86,9 @@
                     android:layout_marginRight="10dip"
                     android:background="@drawable/rounded_corners"
                     android:gravity="center"
-                    android:text="Coup de Soleil"
+                    android:text="Coup de \nSoleil"
                     android:textColor="@android:color/white"
-                    android:textSize="10dp"/>
+                    android:textSize="14dp"/>
 
                 <Button
                     android:id="@+id/button3"
@@ -98,9 +98,9 @@
                     android:layout_marginRight="10dip"
                     android:background="@drawable/rounded_corners"
                     android:gravity="center"
-                    android:text="Piqure Moustique"
+                    android:text="Piqure de \nMoustique"
                     android:textColor="@android:color/white"
-                    android:textSize="10dp"
+                    android:textSize="14dp"
                      />
 
             </LinearLayout>
