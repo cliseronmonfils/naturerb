@@ -103,7 +103,7 @@
                 android:layout_marginTop="35dp"
                 android:gravity="start|top"
                 android:inputType="textMultiLine"
-                android:text="Préparez du jus d’ail en mettant des gousses d’ail à cuire. La vapeur va faciliter l’extraction du jus. Faites couler 3 gouttes dans l’oreille douloureuse. Véritable antibiotique naturel, l’ail est redoutable quand il s’agit de combattre les infections. Et pour cause, ses multiples vertus lui permettent de guérir de nombreux maux. Antifongique, antibactérien et antimicrobien, l’ail est le remède idéal pour traiter l’otite' "
+                android:text="Préparez du jus d’ail en mettant des gousses d’ail à cuire. La vapeur va faciliter l’extraction du jus. Faites couler 3 gouttes dans l’oreille douloureuse. Véritable antibiotique naturel, l’ail est redoutable quand il s’agit de combattre les infections. Et pour cause, ses multiples vertus lui permettent de guérir de nombreux maux. Antifongique, antibactérien et antimicrobien, l’ail est le remède idéal pour traiter l’otite. "
                 app:layout_constraintStart_toStartOf="parent"
                  />
 

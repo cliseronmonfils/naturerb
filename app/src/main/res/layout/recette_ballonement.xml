@@ -67,7 +67,7 @@
                 android:layout_marginTop="35dp"
                 android:gravity="start|top"
                 android:inputType="textMultiLine"
-                android:text="Préparez votre eau citronnée : diluez 1 c. à s. de jus de citron dans un litre d’eau à siroter dans la journée.', 'Cette solution neutralise l’acide gastrique et aide à soulager les gaz et les ballonnements' "
+                android:text="Préparez votre eau citronnée : diluez 1 c. à s. de jus de citron dans un litre d’eau à siroter dans la journée. Cette solution neutralise l’acide gastrique et aide à soulager les gaz et les ballonnements. "
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/linearLayout" />
             <TextView
