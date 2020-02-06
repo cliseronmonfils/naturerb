@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 
 import androidx.annotation.NonNull;
@@ -15,7 +16,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 public class SymptomesBras extends AppCompatActivity {
-
+    private Button PagePiqureMoustique;
+    private Button PageHerpes;
+    private Button PageCoupDeSoleil;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +26,34 @@ public class SymptomesBras extends AppCompatActivity {
         //menu
         Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar);
         setSupportActionBar(toolbar);
+
+        PageHerpes = findViewById(R.id.button1);
+        PageCoupDeSoleil = findViewById(R.id.button2);
+        PagePiqureMoustique = findViewById(R.id.button3);
+
+        PageHerpes.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                moveToPage(RecetteHerpes.class);
+            }
+        });
+
+        PageCoupDeSoleil.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                moveToPage(RecetteCoupDeSoleil.class);
+            }
+        });
+
+        PagePiqureMoustique.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                moveToPage(RecettePiqure.class);
+            }
+        });
     }
 
     //menu bar
