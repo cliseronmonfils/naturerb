@@ -16,15 +16,18 @@
 
 
     <item android:id="@+id/action_projet"
-        android:title="Presentation"
+        android:title="Présentation"
         app:showAsAction="never"></item>
 
     <item android:id="@+id/action_equipe"
-        android:title="Equipe"
+        android:title="Équipe"
+        app:showAsAction="never"></item>
+
+    <item android:id="@+id/action_CGU"
+        android:title="CGU"
         app:showAsAction="never"></item>
 
     <item android:id="@+id/action_mentions"
         android:title="Mentions légales"
         app:showAsAction="never"></item>
-
 </menu>

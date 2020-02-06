@@ -119,17 +119,15 @@ public class SymptomesTete extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
 
-            case R.id.action_accueil:
-                moveToPage(Accueil.class);
-            break;
 
             case R.id.action_projet:
                 final AlertDialog dialogueprojet = new AlertDialog.Builder(this, R.style.AlertDialog)
-                        .setTitle("Le projet NaturErb")
+                        .setTitle("NaturErb")
                         .setMessage(this.getResources().getString(R.string.presentation))
                         .setPositiveButton("Fermer", null)
                         .show()
                         ;
+
                 Button positiveButton = dialogueprojet.getButton(AlertDialog.BUTTON_POSITIVE);
                 positiveButton.setTextColor(Color.parseColor("#ffffff"));
                 dialogueprojet.getWindow().setBackgroundDrawable(new ColorDrawable(0xFF70AD47));
@@ -149,13 +147,25 @@ public class SymptomesTete extends AppCompatActivity {
             case R.id.action_mentions:
                 final AlertDialog dialogmentions = new AlertDialog.Builder(this, R.style.AlertDialog)
                         .setTitle("Mentions légales")
-                        .setMessage(this.getResources().getString(R.string.cgu))
+                        .setMessage("")
                         .setPositiveButton("Fermer", null)
                         .show()
                         ;
                 Button positiveButton3 = dialogmentions.getButton(AlertDialog.BUTTON_POSITIVE);
                 positiveButton3.setTextColor(Color.parseColor("#ffffff"));
                 dialogmentions.getWindow().setBackgroundDrawable(new ColorDrawable(0xFF70AD47));
+                break;
+
+            case R.id.action_CGU:
+                final AlertDialog dialogCGU = new AlertDialog.Builder(this, R.style.AlertDialog)
+                        .setTitle("CGU")
+                        .setMessage(this.getResources().getString(R.string.cgu))
+                        .setPositiveButton("Fermer", null)
+                        .show()
+                        ;
+                Button positiveButton4 = dialogCGU.getButton(AlertDialog.BUTTON_POSITIVE);
+                positiveButton4.setTextColor(Color.parseColor("#ffffff"));
+                dialogCGU.getWindow().setBackgroundDrawable(new ColorDrawable(0xFF70AD47));
                 break;
 
             default:

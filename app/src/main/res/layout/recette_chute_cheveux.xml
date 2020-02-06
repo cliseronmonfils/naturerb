@@ -20,7 +20,7 @@
         android:layout_marginTop="56dp"
         android:background="#4472C4"
         android:gravity="center"
-        android:text="Chute cheveux"
+        android:text="Chute de cheveux"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="#FFFFFF"
         android:textSize="19sp"
@@ -104,7 +104,7 @@
                 android:layout_marginTop="35dp"
                 android:gravity="start|top"
                 android:inputType="textMultiLine"
-                android:text="Consommer ces aliments avec des recettes saines.', 'Les oméga 3 sont de bons remèdes pour fortifier les cheveux "
+                android:text="Consommer ces aliments avec des recettes saines. Les oméga 3 sont de bons remèdes pour fortifier les cheveux "
                 app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
