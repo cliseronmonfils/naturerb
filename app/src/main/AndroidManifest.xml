@@ -36,6 +36,7 @@
         <activity android:name=".RecettePiqure"></activity>
         <activity android:name=".RecetteCelullite"></activity>
         <activity android:name=".RecetteCoupDeSoleil"></activity>
+        <activity android:name=".RecetteMauxTete"></activity>
     </application>
 
 </manifest>

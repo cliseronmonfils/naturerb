@@ -86,7 +86,7 @@
                     android:layout_marginRight="10dip"
                     android:background="@drawable/rounded_corners"
                     android:gravity="center"
-                    android:text="Coup de Soleil"
+                    android:text="Coup de \nSoleil"
                     android:textColor="@android:color/white"
                     android:textSize="14dp"/>
 

@@ -2,7 +2,9 @@ package com.example.naturerb;
 
 import android.content.Intent;
 import android.graphics.Color;
+
 import android.graphics.drawable.ColorDrawable;
+
 import android.os.Bundle;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -40,7 +42,7 @@ public class RecetteCoupDeSoleil extends AppCompatActivity  {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
-
+    
 
             case R.id.action_projet:
                 final AlertDialog dialogueprojet = new AlertDialog.Builder(this, R.style.AlertDialog)
