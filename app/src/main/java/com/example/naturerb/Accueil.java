@@ -2,6 +2,7 @@ package com.example.naturerb;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -94,35 +95,38 @@ public class Accueil extends AppCompatActivity {
 
 
             case R.id.action_projet:
-                final AlertDialog dialogueprojet = new AlertDialog.Builder(this)
+                final AlertDialog dialogueprojet = new AlertDialog.Builder(this, R.style.AlertDialog)
                         .setTitle("Le projet NaturErb")
                         .setMessage(this.getResources().getString(R.string.presentation))
                         .setPositiveButton("Fermer", null)
                         .show()
                         ;
                 Button positiveButton = dialogueprojet.getButton(AlertDialog.BUTTON_POSITIVE);
-                positiveButton.setTextColor(Color.parseColor("#FF0B8B42"));
+                positiveButton.setTextColor(Color.parseColor("#ffffff"));
+                dialogueprojet.getWindow().setBackgroundDrawable(new ColorDrawable(0xFF70AD47));
                 break;
 
             case R.id.action_equipe:
-                final AlertDialog dialoguequipe = new AlertDialog.Builder(this)
+                final AlertDialog dialoguequipe = new AlertDialog.Builder(this, R.style.AlertDialog)
                         .setTitle("L'équipe NaturErb")
                         .setMessage(this.getResources().getString(R.string.equipe))
                         .setPositiveButton("Fermer", null)
                         .show()
                         ;
                 Button positiveButton2 = dialoguequipe.getButton(AlertDialog.BUTTON_POSITIVE);
-                positiveButton2.setTextColor(Color.parseColor("#FF0B8B42"));
+                positiveButton2.setTextColor(Color.parseColor("#ffffff"));
+                dialoguequipe.getWindow().setBackgroundDrawable(new ColorDrawable(0xFF70AD47));
                 break;
             case R.id.action_mentions:
-                final AlertDialog dialogmentions = new AlertDialog.Builder(this)
+                final AlertDialog dialogmentions = new AlertDialog.Builder(this, R.style.AlertDialog)
                         .setTitle("Mentions légales")
                         .setMessage(this.getResources().getString(R.string.cgu))
                         .setPositiveButton("Fermer", null)
                         .show()
                         ;
                 Button positiveButton3 = dialogmentions.getButton(AlertDialog.BUTTON_POSITIVE);
-                positiveButton3.setTextColor(Color.parseColor("#FF0B8B42"));
+                positiveButton3.setTextColor(Color.parseColor("#ffffff"));
+                dialogmentions.getWindow().setBackgroundDrawable(new ColorDrawable(0xFF70AD47));
                 break;
 
             default:
