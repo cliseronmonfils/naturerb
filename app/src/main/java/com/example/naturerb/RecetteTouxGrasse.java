@@ -3,6 +3,7 @@ package com.example.naturerb;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Button;
@@ -12,25 +13,28 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-public class RecetteChuteCheveux extends AppCompatActivity {
+public class RecetteTouxGrasse extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.recette_chute_cheveux);
+        setContentView(R.layout.recette_toux_grasse);
+
         //menu
         Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar);
         setSupportActionBar(toolbar);
 
     }
+
     private void moveToPage(Class obj){
-        Intent intent = new Intent (RecetteChuteCheveux.this, obj);
+        Intent intent = new Intent (RecetteTouxGrasse.this, obj);
         startActivity(intent);
     }
 
     //menu bar
     @Override
-    public boolean onCreateOptionsMenu(android.view.Menu menu) {
+    public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater infalter = getMenuInflater();
         infalter.inflate(R.menu.menu, menu);
         return super.onCreateOptionsMenu(menu);

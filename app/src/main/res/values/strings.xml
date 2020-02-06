@@ -35,4 +35,7 @@ Les informations et données personnelles communiquées par l’utilisateur font
     <string name="presentation">
         Dans le contexte de la réalisation d’un projet sur le thème du “Bien commun”, l’équipe de  NaturErb a réalisé une application proposant un large panel de solutions naturelles en fonction des parties du corps et des symptômes liés à celles-ci.
     </string>
+    <string name="libelleCheveux">
+        Chute de cheveux
+    </string>
 </resources>

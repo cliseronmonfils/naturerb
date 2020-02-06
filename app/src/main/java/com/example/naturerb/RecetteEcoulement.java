@@ -6,26 +6,30 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-public class Recette extends AppCompatActivity {
+public class RecetteEcoulement extends AppCompatActivity {
 
-    private ImageButton PageAccueil;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.recette);
+        setContentView(R.layout.recette_ecoulement_nazal);
+
         //menu
         Toolbar toolbar = (Toolbar) findViewById(R.id.app_bar);
         setSupportActionBar(toolbar);
+
+    }
+
+    private void moveToPage(Class obj){
+        Intent intent = new Intent (RecetteEcoulement.this, obj);
+        startActivity(intent);
     }
 
     //menu bar
@@ -40,6 +44,8 @@ public class Recette extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
 
+            case R.id.action_accueil:
+                moveToPage(Accueil.class);
 
             case R.id.action_projet:
                 final AlertDialog dialogueprojet = new AlertDialog.Builder(this)

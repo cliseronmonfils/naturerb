@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecetteBallonement">
+
+    // menu
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar"></include>
+
+
+    <TextView
+        android:id="@+id/libelle"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginTop="56dp"
+        android:background="#4472C4"
+        android:gravity="center"
+        android:text="Coup de soleil"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#FFFFFF"
+        android:textSize="19sp"
+        app:fontFamily="sans-serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/app_bar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/libelle">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="47dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nomRecette"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="12dp"
+                android:text="Ingrédient :\n Gel d\'Aloe Vera"
+                android:textColor="@color/bleu"
+                android:textSize="18sp"
+                app:fontFamily="sans-serif" />
+
+            <TextView
+                android:id="@+id/recette"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="35dp"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="Appliquez directement le gel sur le coup de soleil en massant. Si la douleur est trop forte, laissez reposer une fine couche. Répétez le soin 3 fois par jour jusqu’à la disparition des rougeurs. Hydratant naturel, adoucissant et anti-inflammatoire, il accélère la cicatrisation et soulage rapidement. "
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/source"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="20dp"
+                android:text="Source : http://www.medecine-douce.net/10-solutions-pour-calmer-coup-soleil/"
+                android:textColor="@color/bleu"
+                android:textSize="10sp"
+                app:fontFamily="sans-serif" />
+
+            <TextView
+                android:id="@+id/nomRecette2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="12dp"
+                android:text="Ingrédient :\n Concombre"
+                android:textColor="@color/bleu"
+                android:textSize="18sp"
+                app:fontFamily="sans-serif" />
+
+            <TextView
+                android:id="@+id/recette2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="35dp"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:text="Coupez-le en fines rondelles et dispersez-les sur la zone inflammée. Patientez quelques minutes. La peau réhydratée par la fraîcheur du concombre, sera rapidement soulagée.\nNaturellement riche en eau, le concombre est un soin idéal contre le coup de soleil"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/source2"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="80dp"
+                android:text="Source : http://www.medecine-douce.net/10-solutions-pour-calmer-coup-soleil/"
+                android:textColor="@color/bleu"
+                android:textSize="10sp"
+                app:fontFamily="sans-serif" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

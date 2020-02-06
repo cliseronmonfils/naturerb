@@ -35,6 +35,9 @@ public class SymptomesJambes extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
 
+            case R.id.action_accueil:
+                moveToPage(Accueil.class);
+            break;
 
             case R.id.action_projet:
                 final AlertDialog dialogueprojet = new AlertDialog.Builder(this)
